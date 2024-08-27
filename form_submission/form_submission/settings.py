@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'form_submission.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mssql',
-        'NAME': 'form_submission',
+        'NAME': 'form_data',
         'HOST': 'HP20MARCH2023\\SQLEXPRESS',
         'USER': '',
         'PASSWORD': '',
