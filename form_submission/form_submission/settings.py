@@ -76,8 +76,15 @@ WSGI_APPLICATION = 'form_submission.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'mssql',
+        'NAME': 'form_submission',
+        'HOST': 'HP20MARCH2023\\SQLEXPRESS',
+        'USER': '',
+        'PASSWORD': '',
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server',
+            'Tursted_Connection': 'yes',
+        },
     }
 }
 
