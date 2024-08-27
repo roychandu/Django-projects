@@ -14,7 +14,8 @@
 
             <img src="/static/images/Registration.jpg">
 
-            <form action="" method="">
+            <form action="{% url 'insert' %}" method="post">
+                {% csrf_token %}
                 <div class="formbold-form-title">
                     <h2 class="">Register now</h2>
                     <p>
