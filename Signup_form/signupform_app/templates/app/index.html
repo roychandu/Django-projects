@@ -19,26 +19,27 @@
         <h3>Try it free 7 days <span>then $20/mo. thereafter</span></h3>
       </div>
       <div class="right_box2">
-        <form action="" method="post">
+        <form action="{% url 'insert' %}" method="post">
+            {% csrf_token %}
             <div class="input_field">
-              <input class="First_name_field" type="text" placeholder="First Name">
+              <input class="First_name_field" type="text" placeholder="First Name" name="fname_input">
               <p class="input_p"><i>First Name cannot be empty</i></p>
               <img class="input_img" src="static/images/icon-error.svg" alt="">
             </div>
     
             <div class="input_field">
-              <input class="Last_name_field" type="text" placeholder="Last Name">
+              <input class="Last_name_field" type="text" placeholder="Last Name" name="lname_input">
               <p class="input_p"><i>Last Name cannot be empty</i></p>
               <img class="input_img" src="static/images/icon-error.svg" alt="">
             </div>
     
             <div class="input_field">
-              <input class="email_field" type="email" placeholder="Email Address">
+              <input class="email_field" type="email" placeholder="Email Address" name="email_input">
               <p class="input_p"><i>Email Address cannot be empty</i></p>
               <img class="input_img" src="static/images/icon-error.svg" alt="">
             </div>
             <div class="input_field">
-              <input class="password_field" type="password" placeholder="Password">
+              <input class="password_field" type="password" placeholder="Password" name="password_input">
               <p class="input_p"><i>Password cannot be empty</i></p>
               <img class="input_img" src="static/images/icon-error.svg" alt="">
             </div>
