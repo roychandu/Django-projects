@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root{
+    --Very_Dark_Grayish_Blue: hsl(217, 19%, 35%);
+    --Desaturated_Dark_Blue: hsl(214, 17%, 51%);
+    --Grayish_Blue: hsl(212, 23%, 69%);
+    --Light_Grayish_Blue: hsl(210, 46%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Light_Grayish_Blue);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+button{
+    width: 10vw;
+    margin-left: 2vw;
+    padding: 0.5vw 0;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: var(--Desaturated_Dark_Blue);
+    color: var(--Light_Grayish_Blue);
+    cursor: pointer;
+}
+table{
+    font-size: 1vw;
+    font-weight: 700;
+    width: 70%;
+}
+th{
+    background-color: var(--Desaturated_Dark_Blue);
+    font-size: 1.5vw;
+    color: var(--Light_Grayish_Blue);
+}
+tr:nth-child(even){
+    background-color: var(--Grayish_Blue);
+}
+#due_date, #status, #priority{
+    width: 8vw;
+}
