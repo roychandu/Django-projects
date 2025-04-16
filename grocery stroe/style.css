@@ -39,23 +39,8 @@ nav{
     color: var(--primary-color);
 }
 
-.navbar01 .col-2 a{
-    font-size: 1.4vw;
-    padding: 0 1.5vw;
-}
 
-.navbar01 .col-3 a{
-    padding: 0 0.5vw;
-}
-.navbar01 .col-3 a i{
-    margin-right: 0.5vw;
-}
 
-.navbar02 .col-2{
-    display: flex;
-    justify-content: space-between;
-    gap: 2vw;
-}
 .navbar02 .col-2 .icon-name{
     text-align: center;
 }
@@ -67,7 +52,7 @@ nav{
     font-size: 1vw;
     color: var(--text-color);
 }
-.navbar02 .col-3 a{
+.navbar02 a{
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.4vw;
