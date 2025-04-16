@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metrophobic&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Revolution&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Staatliches&display=swap');
+
+:root {
+    --primary-color: #00D783;        /* Fresh Green */
+    --secondary-color: #FF9800;      /* Soft Orange */
+    --text-color: #77D2CC;           /* Dark Gray */
+    --background-color: #072320;     /* Light Gray */
+    --highlight-color: #FFEB3B;      /* Lemon Yellow */
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--background-color);
+}
+
+
+.navbar01 a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+.navbar01 a i{
+    margin-right: 0.5vw;
+    color: var(--primary-color);
+}
+
+.navbar01 .col-2 a{
+    font-size: 1.4vw;
+    padding: 0 1.5vw;
+}
+
+.navbar01 .col-3 a{
+    padding: 0 0.5vw;
+}
+.navbar01 .col-3 a i{
+    margin-right: 0.5vw;
+}
+
+.navbar02 .col-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+.navbar02 .col-2 .icon-name{
+    text-align: center;
+}
+.navbar02-col .icon-name i{
+    font-size: 2vw;
+    color: var(--primary-color);
+}
+.navbar02-col .icon-name p{
+    font-size: 1vw;
+    color: var(--text-color);
+}
+.navbar02 .col-3 a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4vw;
+    margin-left: 1vw;
+}
