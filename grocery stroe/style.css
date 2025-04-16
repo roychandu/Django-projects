@@ -58,3 +58,46 @@ nav{
     font-size: 1.4vw;
     margin-left: 1vw;
 }
+
+
+
+.carousel-item img{
+    height: 75vh;
+    object-fit: cover;
+}
+.carousel a span{
+    color: var(--primary-color);
+}
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--primary-color); 
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 0 5px;
+    list-style-type: none;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-indicators .active {
+    background-color: var(--primary-color);
+    animation: pulse 1s infinite ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--primary-color);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+  }
+  
+
+.carousel-item img{
+    transition: all 0.3s ease-in-out;
+}
